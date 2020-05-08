@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Basic HTML5 Form</title>
+<meta name="description" content="TT284 EMA"/>
+<meta name="author" content="Steven Halliday"/>
+<link rel="stylesheet" href="styles.css"/>
+<header> 
+    <h1>Walk Page</h1>
+  <ul>
+    <li> <a href="https://www.w3schools.com">Walk Page  </a> </li>
+    <li> <a href="https://www.w3schools.com">Other events  </a> </li>
+    <li> <a href="https://www.w3schools.com">Anouncments  </a> </li>
+    <li> <a href="https://www.w3schools.com">Membership  </a> </li>
+    <li id="logout"> <a href="https://www.w3schools.com">Log out</a> </li>
+   </ul> 
+</header>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="column">
+        
+       
+
+<div id=form>
+    <!-- Opening the form element -->
+    <form action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post" name="form1">
+        <!-- Input text Boxes -->
+        <h2>Walk event submission form</h2>
+            <p><b>Name:<br> </b><input type="text" name="name" value="Name of event" size="30" maxlength="30" /></p>
+            <p><b>Date:<br> </b><input type="text" name="date" value="Date of event" size="30" maxlength="30" /></p>
+            <p><b>Start Time: <br> </b><input type="text" name="start_time" value="Start time" size="30" maxlength="40" /></p>
+            <p><b>Meeting Point:<br> </b><input type="text" name="meeting_point" value="Meeting point" size="30" maxlength="30" /></p>
+            <p><b>Distance In Miles:<br> </b><input type="text" name="distance_in_miles" value="Distance in miles" size="30" maxlength="30" /></p>
+            <p><b>Notes: <br> </b><input type="text" name="notes" value="Notes" size="30" maxlength="40" /></p>
+            <p><b>Status: <br> </b><input type="text" name="status" value="Status" size="30" maxlength="40" /></p>
+        <!-- Radio buttons 
+            <p>I wish to receive third party offers<input type="radio" name="offers" value="yes"/>Yes
+            <input type="radio" name="offers" value="no" checked="checked" />No</p> -->
+        <!-- Submit and reset buttons -->
+            <p><input type="submit" name="submit" value="Submit" />
+            <input type="reset" name="reset" value="Reset" /></p>
+        <!-- Closing the form element -->
+    </form>
+</div>
+</div>
+<div id="table1">
+    <h2>Existing Events</h2>
+<table>
+    <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Date</th>
+        <th>Start Time</th>
+        <th>Meeting Point</th>
+        <th>Distance in miles</th>
+        <th>Notes</th>
+        <th>Status</th>
+    </tr>
+    
+    <tr>
+      <td><input type="radio" name="offers" value="no" checked="checked" /></p></td>
+      <td>Event 1</td>
+      <td>Event 1</td>
+      <td>Event 1</td>
+      <td>Event 1</td>
+      <td>Event 1</td>
+      <td>Event 1</td>
+      <td>Event 1</td>
+    </tr>
+    <tr>
+      <td><input type="radio" name="offers" value="no" checked="checked" /></p></td>
+      <td>Event 2</td>
+      <td>Event 1</td>
+      <td>Event 1</td>
+      <td>Event 1</td>
+      <td>Event 1</td>
+      <td>Event 1</td>
+      <td>Event 1</td>
+    </tr>
+  </table> 
+  <p><input type="submit" name="submit" value="Submit" />
+    <input type="submit" name="Edit" value="Edit" />
+    <input type="reset" name="reset" value="Reset" /></p>
+</div>
+</div>
+<div class="column">
+<div id="table2">
+    <h2>User Submitted Events</h2>
+    <table>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Start Time</th>
+            <th>Meeting Point</th>
+            <th>Distance in miles</th>
+            <th>Notes</th>
+            <th>Status</th>
+        </tr>
+        
+        <tr>
+            <td><input type="radio" name="offers" value="no" checked="checked" /></p></td>
+            <td>Event 1</td>
+            <td>Event 1</td>
+            <td>Event 1</td>
+            <td>Event 1</td>
+            <td>Event 1</td>
+            <td>Event 1</td>
+            <td>Event 1</td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="offers" value="no" checked="checked" /></p></td>
+            <td>Event 2</td>
+            <td>Event 1</td>
+            <td>Event 1</td>
+            <td>Event 1</td>
+            <td>Event 1</td>
+            <td>Event 1</td>
+            <td>Event 1</td>
+          </tr>
+      </table> 
+      <p><input type="submit" name="submit" value="Submit" />
+        <input type="submit" name="Edit" value="Edit" />
+        <input type="reset" name="reset" value="Reset" /></p>
+    </div>
+</div>    
+</div>
+</body>
+</html>
