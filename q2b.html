@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="TT284 EMA"/>
+<meta name="author" content="Steven Halliday"/>
+<link rel="stylesheet" href="q2b.css"/>
+<title>TT284 EMA Walk Page</title>
+</head>
+
+<body>
+<div class="row">
+<header> 
+  <h1>Walk Page</h1>
+
+    <nav>
+  <ul>
+    <li> <a href="">Walk Page  </a> </li>
+    <li> <a href="">Other events  </a> </li>
+    <li> <a href="">Anouncments  </a> </li>
+    <li> <a href="">Membership  </a> </li>
+    <li id="logout"> <a href="">Log out</a> </li>
+   </ul> 
+    </nav>
+</header>
+
+
+<div class="column">
+<div id=form>
+    <form action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post" name="form1">
+        <!-- Input text Boxes -->
+        <h2>Walk event submission form</h2>
+            <p><b>Name:<br> </b><input type="text" name="name" value="Name of event" size="30" maxlength="30" /></p>
+            <p><b>Date:<br> </b><input type="text" name="date" value="Date of event" size="30" maxlength="30" /></p>
+            <p><b>Start Time: <br> </b><input type="text" name="start_time" value="Start time of event" size="30" maxlength="40" /></p>
+            <p><b>Meeting Point:<br> </b><input type="text" name="meeting_point" value="eg, car park" size="30" maxlength="30" /></p>
+            <p><b>Distance In Miles:<br> </b><input type="text" name="distance_in_miles" value="eg, 20 miles" size="30" maxlength="30" /></p>
+            <p><b>Notes: <br> </b><input type="text" name="notes" value="eg, any extras" size="30" maxlength="40" /></p>
+            <input type="hidden" name="sessionID" value="12345678-09ab-1111-cdef" />
+        <!-- Submit and reset buttons -->
+            <p><input type="submit" name="submit" value="Submit" />
+            <input type="reset" name="reset" value="Reset" /></p>
+    </form>
+</div>
+<div id="table1">
+    <h2>User Submitted Events</h2>
+<table>
+    <caption>User Submitted Events</caption>
+    <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Date</th>
+        <th>Start Time</th>
+        <th>Meeting Point</th>
+        <th>Distance in miles</th>
+        <th>Notes</th>
+        <th>Status</th>
+    </tr>
+    
+    <tr>
+      <td><input type="radio" name="offers" value="no" checked="checked" /></td>
+      <td>Trimdon walk</td>
+      <td>20/10/20</td>
+      <td>0800</td>
+      <td>Central Park</td>
+      <td>5 miles</td>
+      <td>Bring a jacket</td>
+      <td>Pending approval</td>
+    </tr>
+    <tr>
+      <td><input type="radio" name="offers" value="no" checked="checked" /></td>
+      <td>Sedgefield Walk</td>
+      <td>28/10/20</td>
+      <td>0900</td>
+      <td>impecable pig car park</td>
+      <td>3 miles</td>
+      <td>Bring beer tokens</td>
+      <td>Pending approval</td>
+    </tr>
+  </table> 
+  <p><input type="submit" name="submit" value="Approve" />
+    <input type="submit" name="Edit" value="Edit" />
+    <input type="reset" name="reset" value="Reject" /></p>
+</div>
+</div>
+<div class="column">
+<div id="table2">
+    <h2>Existing Events</h2>
+    <table>
+        <caption>Existing Events</caption>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Start Time</th>
+            <th>Meeting Point</th>
+            <th>Distance in miles</th>
+            <th>Notes</th>
+            <th>Status</th>
+        </tr>
+        
+        <tr>
+            <td><input type="radio" name="offers" value="no" checked="checked" /></td>
+            <td>Peterlee Walk</td>
+            <td>4/4/20</td>
+            <td>0800</td>
+            <td>Asda</td>
+            <td>6 miles</td>
+            <td>Bring a camera</td>
+            <td>Approved</td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="offers" value="no" checked="checked" /></td>
+            <td>Durham Walk</td>
+            <td>5/5/20</td>
+            <td>0900</td>
+            <td>Cathedral</td>
+            <td>26 miles</td>
+            <td>Bring walking sticks</td>
+            <td>Approved</td>
+          </tr>
+      </table> 
+      <p><input type="submit" name="submit" value="Submit" />
+        <input type="submit" name="Edit" value="Edit" /></p>
+    </div>
+</div>    
+</div>
+</body>
+</html>
